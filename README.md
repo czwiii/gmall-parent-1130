@@ -1,1 +1,1 @@
-#gmall - parent-1130
+#gmall-parent-1130
