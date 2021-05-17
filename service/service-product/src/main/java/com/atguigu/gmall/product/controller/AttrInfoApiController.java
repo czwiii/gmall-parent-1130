@@ -14,7 +14,7 @@ import java.util.List;
 @RestController
 @CrossOrigin
 @RequestMapping("admin/product")
-public class AttrInfoController {
+public class AttrInfoApiController {
 
     @Resource
     private AttrInfoService attrInfoService;

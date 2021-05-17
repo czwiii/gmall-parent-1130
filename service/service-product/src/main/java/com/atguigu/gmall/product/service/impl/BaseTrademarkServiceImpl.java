@@ -9,6 +9,7 @@ import org.aspectj.weaver.ast.Var;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @Service
 public class BaseTrademarkServiceImpl implements BaseTrademarkService {
@@ -24,5 +25,12 @@ public class BaseTrademarkServiceImpl implements BaseTrademarkService {
         baseTrademarkPage.setSize(limit);
         IPage<BaseTrademark> baseTrademarkIPage = baseTrademarkMapper.selectPage(baseTrademarkPage, null);
         return baseTrademarkIPage;
+    }
+
+    @Override
+    public List<BaseTrademark> getTrademarkList() {
+
+        List<BaseTrademark> baseTrademarkList = baseTrademarkMapper.selectList(null);
+        return baseTrademarkList;
     }
 }
