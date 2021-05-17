@@ -13,6 +13,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>service-util</module>
+        <module>common-util</module>
+        <module>web-util</module>
     </modules>
     <dependencies>
         <dependency>
@@ -61,10 +63,5 @@
         </dependency>
 
     </dependencies>
-
-    <build>
-        <defaultGoal>compile</defaultGoal>
-        <finalName>service-base</finalName>
-    </build>
 
 </project>

@@ -13,6 +13,12 @@
 
     <dependencies>
 
+        <dependency>
+            <groupId>com.atguigu.gmall</groupId>
+            <artifactId>common-util</artifactId>
+            <version>1.0</version>
+        </dependency>
+
         <!-- redis -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -33,17 +39,21 @@
             <version>3.11.2</version>
         </dependency>
 
-        <!--        &lt;!&ndash;mybatis-plus&ndash;&gt;-->
-        <!--        <dependency>-->
-        <!--            <groupId>com.baomidou</groupId>-->
-        <!--            <artifactId>mybatis-plus-boot-starter</artifactId>-->
-        <!--        </dependency>-->
+        <!--mybatis-plus-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+        </dependency>
 
-        <!--        &lt;!&ndash;mysql&ndash;&gt;-->
-        <!--        <dependency>-->
-        <!--            <groupId>mysql</groupId>-->
-        <!--            <artifactId>mysql-connector-java</artifactId>-->
-        <!--        </dependency>-->
+        <!--mysql-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
     </dependencies>
 
+    <build>
+        <defaultGoal>compile</defaultGoal>
+        <finalName>service-base</finalName>
+    </build>
 </project>

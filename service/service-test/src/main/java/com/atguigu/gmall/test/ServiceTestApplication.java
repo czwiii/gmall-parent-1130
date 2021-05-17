@@ -6,8 +6,8 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan({"com.atguigu.gmall"})
-public class ServiceItemApplication {
+public class ServiceTestApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ServiceItemApplication.class,args);
+        SpringApplication.run(ServiceTestApplication.class,args);
     }
 }
