@@ -20,6 +20,13 @@ public class SpuApiController {
     @Resource
     private SpuService spuService;
 
+    @PostMapping("saveSpuInfo")
+    public Result saveSpuInfo(@RequestBody SpuInfo spuInfo){
+
+        Long SpuId = spuService.saveSpuInfo(spuInfo);
+        return Result.ok();
+    }
+
     @GetMapping("{page}/{limit}")
     public Result getSpuInfoPage(@PathVariable("page") long page,
                                  @PathVariable("limit") long limit,

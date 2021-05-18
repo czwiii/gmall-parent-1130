@@ -11,4 +11,6 @@ public interface SpuService {
     IPage<SpuInfo> selectPage(long page, long limit, Long category3Id);
 
     List<BaseSaleAttr> baseSaleAttrList();
+
+    Long saveSpuInfo(SpuInfo spuInfo);
 }
